@@ -21,7 +21,7 @@ function App() {
         date: date,
         task: formInput,
         completed: false
-      }
+      };
       setTasks([...tasks, newTask])
       setFormInput('')
     }
@@ -47,15 +47,13 @@ function App() {
     setTasks([])
   }
 
-
-
-
   return (
     <div className="App">
+      <h1>To do App</h1>
       <Form formImput={formInput} handleChange={handleChange} handleSubmit={handleSubmit} />
       <Todo tasks={tasks} handleComplete={handleComplete} handleRemove={handleRemove} handleRemoveAll={handleRemoveAll} />
     </div>
-  );
+  )
 }
 
 export default App;

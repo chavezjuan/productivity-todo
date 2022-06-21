@@ -20,7 +20,6 @@ const Todo = (props) => {
                     </li>
                 )
             }
-
             {tasks.length > 1 && <p><button className='deleteAll' onClick={() => handleRemoveAll()}><i className="fa-solid fa-eraser"></i>Delete all</button></p>}
         </ul>
     );

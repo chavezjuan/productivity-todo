@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.25s ease-out;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .App {
@@ -16,6 +17,14 @@ body {
   display: flex;
   min-height: 100vh;
   padding: 50px;
+}
+
+h1 {
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  padding-bottom: 30px;
+  color: #ff616e;
 }
 
 form {
@@ -156,7 +165,6 @@ i {
   position: absolute;
   display: none;
 }
-
 
 /* Show the checkmark when checked */
 .checkContainer input:checked ~ .checkmark:after {
